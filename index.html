@@ -13,10 +13,12 @@
             margin: 0px;
             height: 100%;
         }
+
         * {
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
         }
+
         .background {
             background-image: url("currency-background.jpg");
             filter: blur(2px);
@@ -26,9 +28,9 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         #converter {
-            background-color: rgba(0, 0, 0, 0.66);
-            background-color: rgba(0, 0, 0, 0.763);
+            background-color: rgba(0, 0, 0, 0.759);
             color: white;
             font-weight: bold;
             border: 3px solid rgba(255, 255, 0, 0.903);
@@ -43,6 +45,7 @@
             text-align: center;
             box-shadow: 10px 10px 50px black;
         }
+
         .copyright {
             position: absolute;
             font-size: 20px;
@@ -58,21 +61,61 @@
             font-weight: bold;
             text-shadow: 5px 5px 10px black;
         }
+
         #numberInput {
             width: 100%;
             padding: 10px;
             font-size: 1.2em;
             margin-bottom: 10px;
         }
+
         #result {
             margin-top: 10px;
             font-size: 1.2em;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
+
         #heading {
             color: yellow;
             text-align: center;
             margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            #converter {
+                width: 80%;
+                padding: 20px 25px 30px 25px;
+            }
+
+            .copyright {
+                font-size: 16px;
+                top: 95%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #converter {
+                width: 90%;
+                padding: 15px 20px 25px 20px;
+            }
+
+            .copyright {
+                font-size: 14px;
+                top: 97%;
+            }
+
+            #numberInput {
+                font-size: 1em;
+                padding: 8px;
+            }
+
+            #result {
+                font-size: 1em;
+            }
+
+            #heading {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
