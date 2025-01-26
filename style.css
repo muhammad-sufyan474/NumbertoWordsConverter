@@ -1,0 +1,81 @@
+body,
+html {
+    margin: 0px;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    background-image: url("currency-background.jpg");
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#converter {
+    background-color: rgba(0, 0, 0, 0.66);
+    background-color: rgba(0, 0, 0, 0.763);
+    color: white;
+    font-weight: bold;
+    border: 3px solid rgba(255, 255, 0, 0.903);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45%;
+    padding: 40px 50px 60px 50px;
+    text-align: center;
+    box-shadow: 10px 10px 50px black;
+}
+
+.copyright {
+    position: absolute;
+    font-size: 20px;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    color: yellow;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px black;
+}
+
+#numberInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#heading {
+    color: yellow;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.error {
+    color: rgb(255, 39, 39);
+    font-style: italic;
+    display: none;
+    font-size: 0.9em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
